@@ -1,0 +1,56 @@
+/*Voy a trabajar la barra de navegacion*/
+
+/*Le quito el estilo a todos los enlaces*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Pongo estilos generales a la barra de navegacion*/
+header nav{
+    background-color: #2B2A2B;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Outfit';
+    justify-content: space-between;
+    width: 1280px;
+    height: 64px;
+    align-items: center;
+    padding: 12px 40px;
+}
+
+/*Ajusto el tamaño y el espacion entre las distintas paginas, tienda, suscripcion...*/
+div.pages{
+font-size: 14px;
+}
+
+div.pages a{
+    padding: 0px 14px 0px;
+}
+
+
+/*Ajusto cafedealtura.com y su icono*/
+header nav a.linkweb{
+font-size: 23.4628px;
+}
+
+img.cafe{
+    margin-left: -55px;
+}
+
+/*Ajusto el telefono*/
+img.telefono{
+    margin-right: -60px;
+}
+
+/*Doy estilo al boton de login*/
+
+input.login{
+width: 130px;
+height: 40px;
+background-color: #515051;
+border-radius: 4px;
+color: white;
+}
