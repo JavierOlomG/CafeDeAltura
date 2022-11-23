@@ -1,56 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 /*Voy a trabajar la barra de navegacion*/
 
 /*Le quito el estilo a todos los enlaces*/
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
 
-/*Pongo estilos generales a la barra de navegacion*/
-header nav{
+/*Pongo estilos generales a la barra de navegacion y el espacio entre los div principales*/
+header {
     background-color: #2B2A2B;
     color: white;
     display: flex;
     flex-direction: row;
     font-family: 'Outfit';
     justify-content: space-between;
-    width: 1280px;
     height: 64px;
     align-items: center;
     padding: 12px 40px;
 }
 
+
+
+
 /*Ajusto el tamaño y el espacion entre las distintas paginas, tienda, suscripcion...*/
-div.pages{
-font-size: 14px;
+nav {
+    font-size: 14px;
+    display: flex;
+    gap: 32px;
 }
 
-div.pages a{
-    padding: 0px 14px 0px;
+/*Pongo el espacio entre el telefono y boton de login*/
+.phoneLogin {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    align-items: center;
 }
+
+/*Espacio entre el numero y el icono de telefono*/
+.phone {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+
+/*Ajusto el tamaño de la imagen de telefono*/
+.phone img {
+    width: 18px;
+    height: 18px;
+}
+
 
 
 /*Ajusto cafedealtura.com y su icono*/
-header nav a.linkweb{
-font-size: 23.4628px;
+header div a.linkweb {
+    font-size: 23.4628px;
 }
 
-img.cafe{
-    margin-left: -55px;
-}
 
-/*Ajusto el telefono*/
-img.telefono{
-    margin-right: -60px;
-}
+
 
 /*Doy estilo al boton de login*/
 
-input.login{
-width: 130px;
-height: 40px;
-background-color: #515051;
-border-radius: 4px;
-color: white;
+input.login {
+    width: 130px;
+    height: 40px;
+    background-color: #515051;
+    border-radius: 4px;
+    color: white;
+}
+
+
+/*----------------------------------------------------*/
+
+/*Empiezo de la planta a tu taza*/
+
+
+/*Preparo el flexbox principal*/
+
+section.white {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    height: 486px;
+}
+
+/*Voy a prepara el flexbox del resto de elementos*/
+
+section.white div.leftBox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.buttonsTree {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+
+/*Pongo el estilo a los botones*/
+
+.buttonsTree .one{
+    background-color: #1F1815;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    color:white;
+    width: 168px;
+    height: 40px;
+    border-color: transparent;
+}
+
+.buttonsTree .two{
+    width: 137px;
+    height: 40px;
+    background: #2A5B45;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border-color: transparent;
+    color: white;
+}
+
+/*Voy a poner estilo al texto*/
+
+.leftBox h2 {
+    color: #2A5B45;
+    font-family: 'Outfit';
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.leftBox h1 {
+    font-family: 'Outfit';
+    font-size: 40px;
+    line-height: 44px;
+    width: 588px;
+}
+
+.leftBox p {
+    font-family: 'Outfit';
+    font-size: 14px;
+    line-height: 16px;
+    width: 588px;
 }
