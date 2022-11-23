@@ -123,10 +123,31 @@ section.white div.leftBox {
     border-color: transparent;
 }
 
+.buttonsTree .one:active{
+    background-color: #686362;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    color:white;
+    width: 168px;
+    height: 40px;
+    border-color: transparent;
+}
+
 .buttonsTree .two{
     width: 137px;
     height: 40px;
     background: #2A5B45;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border-color: transparent;
+    color: white;
+}
+
+
+.buttonsTree .two:active{
+    width: 137px;
+    height: 40px;
+    background: #9abeae;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     border-color: transparent;
