@@ -208,7 +208,7 @@ section.white div.leftBox {
     gap: 24px;
     width: 996px;
     height: 232px;
-    
+
 }
 
 /*Doy dimensiones y color a las cajas blancas y con flexbox ajusto la caja verde el h3 y el p*/
@@ -223,7 +223,8 @@ section.white div.leftBox {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10px; /*Es el espacio que quiero dejar entre el contenido de la caja blanca y la caja en si*/
+    padding-bottom: 10px;
+    /*Es el espacio que quiero dejar entre el contenido de la caja blanca y la caja en si*/
     gap: 16px;
 }
 
@@ -263,4 +264,99 @@ section.white div.leftBox {
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
+}
+
+
+/*--------------------------------------------*/
+/*Me pongo con la seccion de los sacos de cafe*/
+
+section.white2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 42px;
+    height: 603.39px;
+}
+
+
+div.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    height: 391.39px;
+}
+
+div.sack {
+    width: 282px;
+    height: 391.39px;
+    border: 1px solid #E3DED7;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+    align-items: center;
+    gap: 24px;
+}
+
+.verTodos a {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+div.verTodos {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+
+
+.white2 h2{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 400px;
+font-size: 24px;
+color: #2A5B45;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sack h5 {
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sack input {
+    width: 60px;
+    height: 32px;
+    background-color: rgba(42, 91, 69, 0.7);
+    border-color: rgba(42, 91, 69, 0.7);
+    border-radius: 4px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.sack p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.verTodos img{
+    width: 18px;
+    height: 8px;
 }
