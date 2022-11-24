@@ -3,7 +3,9 @@
     padding: 0;
 }
 
-
+body {
+    width: 1280px;
+}
 
 /*Voy a trabajar la barra de navegacion*/
 
@@ -113,27 +115,27 @@ section.white div.leftBox {
 
 /*Pongo el estilo a los botones*/
 
-.buttonsTree .one{
+.buttonsTree .one {
     background-color: #1F1815;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
-    color:white;
+    color: white;
     width: 168px;
     height: 40px;
     border-color: transparent;
 }
 
-.buttonsTree .one:active{
+.buttonsTree .one:active {
     background-color: #686362;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
-    color:white;
+    color: white;
     width: 168px;
     height: 40px;
     border-color: transparent;
 }
 
-.buttonsTree .two{
+.buttonsTree .two {
     width: 137px;
     height: 40px;
     background: #2A5B45;
@@ -144,7 +146,7 @@ section.white div.leftBox {
 }
 
 
-.buttonsTree .two:active{
+.buttonsTree .two:active {
     width: 137px;
     height: 40px;
     background: #9abeae;
@@ -175,4 +177,90 @@ section.white div.leftBox {
     font-size: 14px;
     line-height: 16px;
     width: 588px;
+}
+
+
+/*---------------------------*/
+
+/*Me pongo con la seccion con el cafe de fondo*/
+
+
+/*Pongo la imagen de fondo y la ajusto. Hago un flexbox para ajustar el titulo y las cajas */
+.cafeFondo {
+    background-image: url("../asset/cafeDeFondo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+/*Doy dimension al div que recoge las cajas blancas y con flexbox  ajusto las cajas entre ellas*/
+
+.whiteboxes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    width: 996px;
+    height: 232px;
+    
+}
+
+/*Doy dimensiones y color a las cajas blancas y con flexbox ajusto la caja verde el h3 y el p*/
+
+.whitebox {
+    width: 316px;
+    height: 232px;
+    background: #FFFFFF;
+    border: 1px solid #F7F5F3;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px; /*Es el espacio que quiero dejar entre el contenido de la caja blanca y la caja en si*/
+    gap: 16px;
+}
+
+/*Ajusto los iconos y creo las cajas verdes*/
+
+.greenbox {
+    width: 64px;
+    height: 64px;
+    background: #2A5B45;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Doy estilo al texto*/
+
+.whitebox p {
+    font-family: 'Outfit';
+    font-size: 14px;
+    line-height: 16px;
+    width: 268px;
+    height: 64px;
+    text-align: center;
+}
+
+.whitebox h3 {
+    font-family: 'Outfit';
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.cafeFondo h2 {
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
 }
