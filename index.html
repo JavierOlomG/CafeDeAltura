@@ -17,10 +17,10 @@
 <body>
     <header>
 
-        <div><a class="linkweb" href="">cafedealtura.com</a> <img class="cafe" src="./Asset/cafe.png" alt="Img cafe">
+        <div><a class="linkweb" href="index.html">cafedealtura.com</a> <img class="cafe" src="./Asset/cafe.png" alt="Img cafe">
         </div>
         <nav>
-            <a href="">Tienda</a>
+            <a href="./pages/tienda.html">Tienda</a>
             <a href=""> Suscripción</a>
             <a href=""> Para empresas</a>
             <a href="">Sobre nosotros</a>
@@ -28,7 +28,7 @@
         </nav>
         <div class="phoneLogin">
             <div class="phone"><img src="Asset/phone.png" alt="telefono">+34 919 49 05 18</div>
-            <input class="login" type="button" value="Iniciar sesión">
+            <button class="login">Iniciar sesión</button>
         </div>
         <img src="Asset/shoopbag.png" alt="shoopbag">
 
@@ -42,8 +42,8 @@
             <p>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que puedas
                 viajar desde la comodidad de tu hogar. </p>
             <div class="buttonsTree">
-                <input class="one" type="button" value="Descubrir orígenes">
-                <input class="two" type="button" value="Comprar café">
+                <button class="one">Descubrir orígenes</button>
+                <button class="two">Comprar café</button>
             </div>
         </div>
         <img src="./asset/tree.jpg" alt="Tree">
@@ -80,25 +80,25 @@
         <h2>Novedades</h2>
         <div class="products">
             <div class="sack">
-                <img src="./asset/sacoVerde.jpg">
+                <img src="./asset/sacoVerde.png">
                 <h5>Costa Rica Tarrazú</h5>
                 <p>9,00 €</p>
-                <input type="button" value="Añadir" class="greenbutton">
+                <button class="greenbutton">Añadir</button>
             </div>
-            <div class="sack"><img src="./asset/sacoRojo.jpg">
+            <div class="sack"><img src="./asset/sacoRojo.png">
                 <h5>Colombia Los Naranjos</h5>
                 <p>9,00 €</p>
-                <input type="button" value="Añadir" class="greenbutton">
+                <button class="greenbutton">Añadir</button>
             </div>
-            <div class="sack"><img src="./asset/sacoVerdeClaro.jpg">
+            <div class="sack"><img src="./asset/sacoVerdeClaro.png">
                 <h5>Laos Amanecer</h5>
                 <p>9,00 €</p>
-                <input type="button" value="Añadir" class="greenbutton">
+                <button class="greenbutton">Añadir</button>
             </div>
-            <div class="sack"><img src="./asset/sacoMorado.jpg">
+            <div class="sack"><img src="./asset/sacoMorado.png">
                 <h5>Etiopía Yrgacheff</h5>
                 <p>9,00 €</p>
-                <input type="button" value="Añadir" class="greenbutton">
+                <button class="greenbutton">Añadir</button>
             </div>
         </div>
         <div class="verTodos"><a href="">Ver todos</a> <img src="./asset/flecha.png"></div>
@@ -181,11 +181,11 @@
                 <div class="allform">
                     <div class="formquestion">
                         <label for="name">Nombre completo</label>
-                        <input class="formtext" type="text">
+                        <input class="formtext" type="text" placeholder="TuNombre">
                     </div>
                     <div class="formquestion">
                         <label for="">Email</label>
-                        <input class="formtext" type="text">
+                        <input class="formtext" type="text" placeholder="tuemail@gmail.com">
                     </div>
 
                     <div class="formquestion">
@@ -194,6 +194,8 @@
                         <div>
                             <select class="idiom">
                                 <option value="US">US</option>
+                                <option value="ES">ES</option>
+                                <option value="FR">FR</option>
                             </select>
                             <input class="formtextphone" type="text">
                         </div>
@@ -214,7 +216,40 @@
 
 
     <footer>
-        
+        <div class="mainfooter">
+            <div class="domain">
+                <a class="linkweb" href="">cafedealtura.com</a> <img class="cafe" src="./Asset/cafe.png" alt="Img cafe">
+            </div>
+            <div class="helpYou">
+                <div class="helpYouLeft">
+                    <h3>Te ayudamos en</h3>
+                    <div class="helpYouPhone">
+                        <img src="./asset/PhoneWhite.png">
+                        <p class="footerPhoneEmail">+34 919 49 05 18</p>
+                    </div>
+                    <div class="helpYouEmail">
+                        <img src="./asset/EmailWhite.png">
+                        <p class="footerPhoneEmail">hola@cafedealtura.com</p>
+                    </div>
+                </div>
+
+                <div class="helpYouCenter">
+                    <a href="">Tienda</a>
+                    <a href="">Suscripción</a>
+                    <a href="">Para empresas</a>
+                    <a href="">Sobre nosotros</a>
+                    <a href="">Contacto</a>
+                </div>
+                <div class="helpYouRight">
+                    <a href="">Política de privacidad</a>
+                    <a href="">Política de cookies</a>
+                    <a href="">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+        <div class="endfooter">
+            <a href="" class="footerPhoneEmail">Todos los derechos reservados - Café de Altura SL - 2022</a>
+        </div>
     </footer>
 
 
