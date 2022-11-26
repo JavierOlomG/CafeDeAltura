@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Outfit';
+    font-style: normal;
 }
 
 body {
@@ -22,7 +24,6 @@ header {
     color: white;
     display: flex;
     flex-direction: row;
-    font-family: 'Outfit';
     justify-content: space-between;
     height: 64px;
     align-items: center;
@@ -160,20 +161,17 @@ section.white div.leftBox {
 
 .leftBox h2 {
     color: #2A5B45;
-    font-family: 'Outfit';
     font-size: 18px;
     line-height: 24px;
 }
 
 .leftBox h1 {
-    font-family: 'Outfit';
     font-size: 40px;
     line-height: 44px;
     width: 588px;
 }
 
 .leftBox p {
-    font-family: 'Outfit';
     font-size: 14px;
     line-height: 16px;
     width: 588px;
@@ -243,7 +241,6 @@ section.white div.leftBox {
 /*Doy estilo al texto*/
 
 .whitebox p {
-    font-family: 'Outfit';
     font-size: 14px;
     line-height: 16px;
     width: 268px;
@@ -252,14 +249,12 @@ section.white div.leftBox {
 }
 
 .whitebox h3 {
-    font-family: 'Outfit';
     font-size: 18px;
     line-height: 24px;
     text-align: center;
 }
 
 .cafeFondo h2 {
-    font-family: 'Outfit';
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -303,7 +298,6 @@ div.sack {
 }
 
 .verTodos a {
-    font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -320,43 +314,292 @@ div.verTodos {
 
 
 
-.white2 h2{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 400px;
-font-size: 24px;
-color: #2A5B45;
+.white2 h2 {
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 24px;
+    color: #2A5B45;
 
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .sack h5 {
-    font-family: 'Outfit';
     font-weight: 600;
     font-size: 14px;
 }
 
-.sack input {
+.greenbutton {
     width: 60px;
     height: 32px;
     background-color: rgba(42, 91, 69, 0.7);
     border-color: rgba(42, 91, 69, 0.7);
     border-radius: 4px;
-    font-family: 'Outfit';
-    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+.greenbutton:active {
+    width: 60px;
+    height: 32px;
+    background-color: rgba(138, 200, 172, 0.7);
+    border-color: rgba(138, 200, 172, 0.7);
+    border-radius: 4px;
     font-weight: 500;
     font-size: 14px;
     color: #FFFFFF;
 }
 
 .sack p {
-    font-family: 'Outfit';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
 }
 
-.verTodos img{
+.verTodos img {
     width: 18px;
     height: 8px;
 }
+
+
+
+/*------------------------------------------------*/
+/*Voy a hacer la seccion con el fondo verde*/
+
+
+section.backgreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+    gap: 30px;
+    height: 621px;
+    background: #2A5B45;
+}
+
+
+div.allquestion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+div.questionWhite {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    width: 668px;
+    background: #F7F5F3;
+    border-radius: 10px;
+}
+
+
+div.question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.resolvemosDudas {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: white;
+}
+
+div.resolvemosDudas {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+
+/*Trabajo el estilo del texto*/
+
+.backgreen h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.question h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    color: #2B2A2B;
+}
+
+
+/*------------------------------------*/
+
+/*Aqui iria la parte que tiene la imagen del bar*/
+/*Como tiene la misma estructura que la seccion de la planta a tu taza pues pongo la misma clase*/
+
+
+/*----------------------------------------*/
+/*Empezamos la seccion contacto*/
+
+/*Pongo el fondo de toda la section y le doy un poco de pading a los lados*/
+section.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E3DED7;
+    padding: 0px 40px 0px;
+}
+
+
+/*Alineo verticalmente todo al centro y le doy espacio entre los dos bloques de la derecha e izquierda  */
+.maincontact {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+/*Alineo la parte de la izquierda*/
+div.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 588px;
+}
+
+.contactstart {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.contactend {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.emailphone {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 12px;
+
+}
+
+
+/*Alineo toda la parte de la derecha*/
+
+.maincontact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: #FFFFFF;
+    width: 588px;
+}
+
+.allform {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 55px 32px;
+    gap: 24px;
+}
+
+
+
+.formquestion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px;
+    gap: 4px;
+}
+
+/*Separo el checkbox*/
+.formquestion2 {
+    display: flex;
+    gap: 4px;
+    width: 442px;
+}
+
+
+
+
+/*Doy estilo al enlace*/
+a.linkform {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+    text-decoration: underline;
+}
+
+/*Doy estilo a las p de la parte de la parte de la izquierda*/
+.contact p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6B7280;
+}
+
+/*Ajusto los input*/
+.formtext {
+    width: 470px;
+    height: 34px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.formtextphone {
+    width: 402px;
+    height: 34px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    border-left: none;
+}
+
+
+div select.idiom {
+    width: 68px;
+    height: 38px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    border-right: none;
+    text-align: center;
+}
+
+textarea {
+    width: 470px;
+}
+
+.greenbutton2 {
+    width: 90px;
+    height: 40px;
+    background: #2A5B45;
+    border-radius: 4px;
+    color: white;
+}
+
+.greenbutton2:active {
+    width: 90px;
+    height: 40px;
+    background: #abd3c1;
+    border-radius: 4px;
+    color: white;
+}
+
