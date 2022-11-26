@@ -41,7 +41,7 @@ nav {
     display: flex;
     /*NO es util en la pagina principal, pero si en el resto de páginas para cuando meta el padding para la parte gris*/
     align-items: center;
-    gap: 32px;
+    gap: 31.5px;
 }
 
 /*Pongo el espacio entre el telefono y boton de login*/
@@ -74,10 +74,30 @@ div a.linkweb {
 }
 
 
-nav a:hover{
-    text-decoration: underline 1.5px;
-    text-decoration-color: white;
+
+/*Hago un efecto de subrayado al hacer hover en el nav*/
+
+/*Esto siempre esta en el codigo por lo que afecto al flexbox, es decir si le doy mas altura, se descuadra, aunque no se vea el subraydo es como si estuviera*/
+/*Esto ultimo lo solucionamos facilmente cambiando el gap del flex del nav*/
+nav a:after{
+        content: "";
+        display: flex;
+        height: 1.5px;
+        width: 100%;
+        background: rgb(254, 254, 255);
+        /*animacion de derecha a izquierda*/
+        transform-origin: right;
+        transform: scaleX(0);/*Hace que no aparezca */
+        transition: transform 0.5s ease-in-out;
 }
+
+
+nav a:hover:after {
+    /*animacion de derecha a izquierda*/
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
 
 /*Doy estilo al boton de login*/
 
