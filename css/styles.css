@@ -79,16 +79,17 @@ div a.linkweb {
 
 /*Esto siempre esta en el codigo por lo que afecto al flexbox, es decir si le doy mas altura, se descuadra, aunque no se vea el subraydo es como si estuviera*/
 /*Esto ultimo lo solucionamos facilmente cambiando el gap del flex del nav*/
-nav a:after{
-        content: "";
-        display: flex;
-        height: 1.5px;
-        width: 100%;
-        background: rgb(254, 254, 255);
-        /*animacion de derecha a izquierda*/
-        transform-origin: right;
-        transform: scaleX(0);/*Hace que no aparezca */
-        transition: transform 0.5s ease-in-out;
+nav a:after {
+    content: "";
+    display: flex;
+    height: 1.5px;
+    width: 100%;
+    background: rgb(254, 254, 255);
+    /*animacion de derecha a izquierda*/
+    transform-origin: right;
+    transform: scaleX(0);
+    /*Hace que no aparezca */
+    transition: transform 0.5s ease-in-out;
 }
 
 
@@ -96,7 +97,7 @@ nav a:hover:after {
     /*animacion de derecha a izquierda*/
     transform-origin: left;
     transform: scaleX(1);
-  }
+}
 
 
 /*Doy estilo al boton de login*/
@@ -343,7 +344,7 @@ div.sack:hover {
     padding-bottom: 24px;
     align-items: center;
     gap: 24px;
-    background-color:#F7F5F3;
+    background-color: #F7F5F3;
 }
 
 .verTodos a {
@@ -568,7 +569,6 @@ div.contact {
     align-items: center;
     gap: 24px;
     background-color: #FFFFFF;
-    width: 588px;
 }
 
 .allform {
@@ -657,7 +657,7 @@ div select.idiom {
     height: 36px;
     border: 1px solid #D1D5DB;
     border-radius: 6px;
-    border-top-right-radius:0px ;
+    border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border-right: none;
     text-align: center;
@@ -670,7 +670,7 @@ textarea {
 .greenbutton2 {
     width: 90px;
     height: 40px;
-    background:rgba(42, 91, 69, 0.7);
+    background: rgba(42, 91, 69, 0.7);
     border-radius: 4px;
     color: white;
     border: none;
@@ -822,7 +822,7 @@ div.sackSell {
     border: none;
 }
 
-.white2 h4 {
+h4.otherPages {
     font-weight: 500;
     font-size: 24px;
     color: #2A5B45;
@@ -848,4 +848,200 @@ div.count {
     width: 24px;
     height: 24px;
     padding: 4px;
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*Empiezo la cesta*/
+
+
+/*Ajusto la cabecera sin el nav*/
+.phoneBasket {
+    display: flex;
+    gap: 46px;
+}
+
+
+/*Meto flex y organizo la estructura de toda la seccion de las cesta*/
+
+.buyBasket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 40px;
+    padding-bottom: 264px;
+}
+
+.mainBuyBasket {
+    display: flex;
+    flex-direction: row;
+    gap: 24px
+}
+
+.buyProducts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.productToBuy {
+    display: flex;
+    gap: 24px;
+}
+
+
+.shipping {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.shippingName {
+    width: 657px;
+}
+
+.productCounter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+}
+
+.productName {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 500.34px;
+}
+
+.productPrice {
+    display: flex;
+}
+
+.pay {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background: #F7F5F3;
+    height: 250px;
+
+}
+
+.payPrice {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.envio {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iva {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.payChekout {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.payChekout .greenButton {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    background: #2A5B45;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.payChekout .whiteButton {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #F7F5F3;
+    color: #2A5B45;
+}
+
+
+
+/*Hago las imagene de los sacos pequeñas*/
+.smallBag {
+    width: 55.66px;
+    height: 55.66px;
+}
+
+
+/*Genero el circulo al rededor del 1*/
+
+.productCount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: rgba(42, 91, 69, 0.1);
+    border-radius: 200px;
+    font-size: 12px;
+}
+
+/*Voy a preparar el estilo de los precios*/
+
+.productPrice {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.productPrice2 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+/*Letra pequeña del iva*/
+
+.smallIva {
+    font-size: 12px;
+}
+
+/*Titulo de los envios*/
+.shipping h6 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+
+/*Estilo de los botones radio*/
+input[type="radio"]{
+    accent-color: #2A5B45;
+    width: 16px;
+    height: 16px;
+}
+
+.payPrice div{
+    font-size: 14px;
 }
