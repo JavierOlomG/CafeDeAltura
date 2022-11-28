@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Estos links son para las font Familys-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <!---->
+    <title>Tienda Cafe de Altura</title>
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <a class="linkweb" href="../index.html">cafedealtura.com</a>
+            <img class="cafe" src="../asset/cafe.png" alt="Img cafe">
+        </div>
+        <div class="phoneBasket">
+            <div class="phoneLogin">
+                <div class="phone"><img src="../asset/phone.png" alt="telefono">+34 919 49 05 18</div>
+                <button class="login">Iniciar sesión</button>
+            </div>
+            <div class="basketCount">
+                <img src="../asset/shoopbag.png" alt="shoopbag">
+                <div class="count">
+                    <p>2</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="checkout">
+        <h4 class="otherPages">Checkout</h4>
+        <div class="mainCheckout">
+            <div class="checkoutQuestions">
+                <h3>Seleccionar método de pago</h3>
+                <div class="creditCard">
+                    <input type="radio" name="payForm">
+                    <div class="creditCard2">
+                        <h6>Tarjeta de débito</h6>
+                        <p>Opción estándar sin seguimiento</p>
+                    </div>
+                </div>
+                <div class="owner">
+                    <div>
+                        <label>Titular</label>
+                        <input type="text" placeholder="Nombre del titular" class="medium">
+                    </div>
+                    <div>
+                        <label>Número de la tarjeta</label>
+                        <input type="text" placeholder="1234 1234 1234 1234" class="medium">
+                    </div>
+                    <div class="labelRow">
+                        <div>
+                            <label>Fecha de caducidad</label>
+                            <input type="text" placeholder="MM / YY" class="small">
+                        </div>
+                        <div>
+                            <label> CVC</label>
+                            <input type="text" placeholder="123" class="small">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="transfer">
+                    <input type="radio" name="payForm">
+                    <div class="transfer2">
+                        <h6>Transferencia bancaria a la cuenta ES12 1234 1234 123457890</h6>
+                        <p>Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="bizum">
+                    <input type="radio" name="payForm">
+                    <div class="bizum2">
+                        <h6>Bizum</h6>
+                        <img src="../asset/bizum.png" alt="Bizum">
+                    </div>
+                </div>
+                <h3>Dirección de envío</h3>
+                <div class="shippingAddress">
+                    <div>
+                        <label>Nombre</label>
+                        <input type="text" class="large">
+                    </div>
+                    <div>
+                        <label>Apellidos</label>
+                        <input type="text" class="large">
+                    </div>
+                    <div>
+                        <label>Teléfono</label>
+                        <input type="text" placeholder="+34 600 6000 600" class="large">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" class="large">
+                    </div>
+                    <div>
+                        <label>País</label>
+                        <select class="large">
+                            <option value="España">España</option>
+                            <option value="España">Francia</option>
+                            <option value="España">Mexico</option>
+                            <option value="España">Argentina</option>
+                            <option value="España">Polonia</option>
+                        </select>
+                    </div>
+                    <div class="labelRowDoble">
+                        <div class="labelRow">
+                            <label>Población</label>
+                            <input type="text" class="medium2">
+                        </div>
+                        <div class="labelRow">
+                            <label>CP</label>
+                            <input type="text" placeholder="123" class="medium2">
+                        </div>
+                    </div>
+                    <div class="labelRow4">
+                        <div class="labelRow">
+                            <label>Calle</label>
+                            <input type="text" class="small">
+                        </div>
+                        <div class="labelRow">
+                            <label>Nº</label>
+                            <input type="text" class="small">
+                        </div>
+                        <div class="labelRow">
+                            <label>Piso</label>
+                            <input type="text" class="small">
+                        </div>
+                        <div class="labelRow">
+                            <label>Puerta</label>
+                            <input type="text" class="small">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="pay">
+                <div class="payPrice">
+                    <h3>Total del carrito</h3>
+                    <hr>
+                    <div class="subtotal">
+                        <p>SUBTOTAL</p>
+                        <p class="productPrice2">18,00 €</p>
+                    </div>
+                    <div class="envio">
+                        <p>ENVIO</p>
+                        <p class="productPrice2">GRATIS</p>
+                    </div>
+                    <hr>
+                    <div class="total">
+                        <p>TOTAL</p>
+                        <div class="iva">
+                            <p class="productPrice2">18,00 €</p>
+                            <p class="smallIva">Incluye 3,78€ de IVA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payChekout">
+                    <button class="greenButton">Pagar y realizar pedido</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="endfooter">
+        <a href="" class="footerPhoneEmail">Todos los derechos reservados - Café de Altura SL - 2022</a>
+    </div>
+
+</body>
+
+</html>

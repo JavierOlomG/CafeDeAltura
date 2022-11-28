@@ -239,12 +239,7 @@ section.white div.leftBox {
 
 .whiteboxes {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     gap: 24px;
-    width: 996px;
-    height: 232px;
-
 }
 
 /*Doy dimensiones y color a las cajas blancas y con flexbox ajusto la caja verde el h3 y el p*/
@@ -347,6 +342,11 @@ div.sack:hover {
     background-color: #F7F5F3;
 }
 
+.sack:hover button.greenbutton {
+    background-color: #2A5B45;
+}
+
+
 .verTodos a {
     font-style: normal;
     font-weight: 600;
@@ -389,20 +389,7 @@ div.verTodos {
     border: none;
 }
 
-.greenbutton:hover {
-    width: 60px;
-    height: 32px;
-    background-color: #2A5B45;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 14px;
-    color: #FFFFFF;
-    text-align: center;
-    border: none;
-}
-
-
-.greenbutton:active {
+div.sack button.greenbutton:active {
     width: 60px;
     height: 32px;
     background-color: rgba(138, 200, 172, 0.7);
@@ -781,7 +768,7 @@ div.helpYouRight a,
 }
 
 
-.helpYouLeft h3 {
+.helpYouLeft {
     font-weight: 300;
     font-size: 18px;
 }
@@ -1036,12 +1023,123 @@ div.count {
 
 
 /*Estilo de los botones radio*/
-input[type="radio"]{
+input[type="radio"] {
     accent-color: #2A5B45;
     width: 16px;
     height: 16px;
 }
 
-.payPrice div{
+.payPrice div {
     font-size: 14px;
+}
+
+
+
+/*--------------------------------------------------------------*/
+/*Empiezo el checkout*/
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 40px;
+}
+
+.mainCheckout {
+    display: flex;
+    gap: 24px;
+}
+
+.checkoutQuestions {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 24px;
+}
+
+.creditCard,
+.transfer,
+.bizum {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.owner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.owner div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.owner .labelRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+
+.labelRowDoble,
+.labelRow4 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+
+.shippingAddress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+
+.shippingAddress div:not(.labelRowDoble, .labelRow4) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+
+input.small {
+    padding: 10px 8px;
+    width: 112.25px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+
+input.medium {
+    padding: 10px 8px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    width: 279px;
+}
+
+
+input.medium2 {
+    padding: 10px 8px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    width: 248.5px;
+}
+
+input.large,
+select.large {
+    padding: 10px 8px;
+    width: 521px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
 }
