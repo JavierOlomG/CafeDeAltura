@@ -422,7 +422,7 @@ section.backgreen {
     align-items: center;
     padding-top: 48px;
     gap: 30px;
-    height: 621px;
+    padding-bottom: 20px;
     background: #2A5B45;
 }
 
@@ -1142,4 +1142,12 @@ select.large {
     width: 521px;
     border: 1px solid #D1D5DB;
     border-radius: 6px;
+}
+
+
+
+/*Lo uso para js*/
+
+.hidden {
+    display: none;
 }
