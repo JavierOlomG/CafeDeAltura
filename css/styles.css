@@ -412,7 +412,7 @@ div.sack button.greenbutton:active {
 
 
 
-/*------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
 /*Voy a hacer la seccion con el fondo verde*/
 
 
@@ -488,6 +488,10 @@ div.resolvemosDudas {
     color: #2B2A2B;
 }
 
+/*Hago que cuando pases el cursor por encima de la imagen del boton desplegable, parezca que es un boton*/
+.question img{
+    cursor: pointer
+}
 
 /*------------------------------------*/
 
@@ -1151,3 +1155,4 @@ select.large {
 .hidden {
     display: none;
 }
+
